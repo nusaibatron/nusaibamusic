@@ -20,17 +20,30 @@ body{
     margin:100px auto;
 }
 
+.back{
+    display:inline-block;
+    margin-bottom:40px;
+    color:rgba(255,255,255,.6);
+    text-decoration:none;
+    transition:.2s;
+}
+
+.back:hover{
+    color:white;
+}
+
 h1{
-    font-size:58px;
+    font-size:clamp(48px,8vw,72px);
     font-weight:300;
-    margin-bottom:18px;
+    margin:0 0 20px;
+    letter-spacing:-2px;
 }
 
 .description{
     color:rgba(255,255,255,.72);
     font-size:20px;
-    line-height:1.6;
-    margin-bottom:50px;
+    line-height:1.7;
+    margin-bottom:55px;
 }
 
 label{
@@ -38,6 +51,7 @@ label{
     margin-bottom:10px;
     font-size:14px;
     letter-spacing:1px;
+    color:rgba(255,255,255,.85);
 }
 
 input{
@@ -49,26 +63,31 @@ input{
     padding:18px;
 
     background:#111;
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:12px;
-
     color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:14px;
+
     font-size:16px;
+
+    transition:.2s;
 }
 
 input:focus{
     outline:none;
-    border-color:#ff4f8c;
+    border-color:#ff5b94;
 }
 
 button{
-    background:white;
-    color:black;
+    margin-top:10px;
+
+    padding:16px 34px;
 
     border:none;
     border-radius:999px;
 
-    padding:16px 34px;
+    background:white;
+    color:black;
 
     font-size:15px;
     letter-spacing:1px;
@@ -78,16 +97,7 @@ button{
 }
 
 button:hover{
-    transform:translateY(-1px);
-}
-
-.back{
-    display:inline-block;
-    margin-bottom:45px;
-
-    color:rgba(255,255,255,.6);
-
-    text-decoration:none;
+    transform:translateY(-2px);
 }
 
 </style>
@@ -98,28 +108,41 @@ button:hover{
 
 <div class="container">
 
-<a class="back" href="/">← Back</a>
+<a class="back" href="/">← Back to Home</a>
 
 <h1>Join the Team</h1>
 
 <p class="description">
-We're looking for video editors, marketing managers, and other creatives to join the New7 Music team.
+We're looking for video editors, marketing managers, and other creatives to join the Nusaiba Music team.
 Sound like you? Fill this out and we'll get back to you.
 </p>
 
-<form>
+<form action="https://formspree.io/f/maqglpaq" method="POST">
+
+<input type="hidden" name="_subject" value="New Join the Team Application">
 
 <label>Name</label>
-<input type="text" name="name" required>
+<input
+    type="text"
+    name="name"
+    required>
 
 <label>Position of Interest</label>
-<input type="text" name="position" required>
+<input
+    type="text"
+    name="position"
+    required>
 
 <label>Email</label>
-<input type="email" name="email" required>
+<input
+    type="email"
+    name="_replyto"
+    required>
 
 <label>School (optional)</label>
-<input type="text" name="school">
+<input
+    type="text"
+    name="school">
 
 <button type="submit">
 Join the Team
