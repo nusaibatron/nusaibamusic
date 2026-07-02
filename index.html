@@ -1,6 +1,132 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nusaiba</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #2a0d14 0%, #050505 55%, #000 100%);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    .page {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: clamp(64px, 10vw, 120px);
+      font-weight: 300;
+      margin: 0 0 40px;
+      letter-spacing: -4px;
+    }
+
+    .card {
+      max-width: 1050px;
+      margin: 0 auto 35px;
+      padding: 26px;
+      border-radius: 22px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      background: linear-gradient(135deg, #ff2b68, #e9a0b9);
+      box-shadow: 0 0 55px rgba(255, 56, 112, 0.55);
+    }
+
+    .tile {
+      position: relative;
+      height: 290px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,.3);
+    }
+
+    .tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .button {
+      position: absolute;
+      left: 22px;
+      bottom: 18px;
+      padding: 10px 24px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.28);
+      border: 1px solid rgba(255,255,255,.35);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 54px);
+      font-weight: 300;
+      margin: 25px 0 22px;
+    }
+
+    p {
+      max-width: 850px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.7);
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 800px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+
+      .tile {
+        height: 330px;
+      }
+
+      h1 {
+        font-size: 72px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Helvetica Neue'; color: #f1eee5; -webkit-text-stroke: #f1eee5"><span class="s1"><b>NUSAIBA MUSIC — SITE COMING SOON</b><b></b></span></h1>
+  <main class="page">
+    <h1>nusaiba</h1>
+
+    <section class="card">
+      <div class="tile">
+        <img src="youtube.jpg" alt="Nusaiba playing guitar" />
+        <a class="button" href="YOUR_YOUTUBE_LINK">YOUTUBE</a>
+      </div>
+
+      <div class="tile">
+        <img src="instagram.jpg" alt="Music studio wall" />
+        <a class="button" href="YOUR_INSTAGRAM_LINK">INSTAGRAM</a>
+      </div>
+
+      <div class="tile">
+        <img src="spotify.jpg" alt="Spotify" />
+        <a class="button" href="YOUR_SPOTIFY_LINK">SPOTIFY</a>
+      </div>
+    </section>
+
+    <h2>these words are my heart &amp; soul</h2>
+
+    <p>
+      if you’re boring, bland, and hate indie pop guitars + a hopeless romantic girl singing
+      with irony to mask heartbreak, then i’m afraid my music is not for you.
+    </p>
+  </main>
 </body>
 </html>
