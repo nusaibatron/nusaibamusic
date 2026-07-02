@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Join the Team</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#000;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.container{
+    width:min(700px,90%);
+    margin:100px auto;
+}
+
+h1{
+    font-size:58px;
+    font-weight:300;
+    margin-bottom:18px;
+}
+
+.description{
+    color:rgba(255,255,255,.72);
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:50px;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+input{
+    width:100%;
+    box-sizing:border-box;
+
+    margin-bottom:28px;
+
+    padding:18px;
+
+    background:#111;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+
+    color:white;
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#ff4f8c;
+}
+
+button{
+    background:white;
+    color:black;
+
+    border:none;
+    border-radius:999px;
+
+    padding:16px 34px;
+
+    font-size:15px;
+    letter-spacing:1px;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-1px);
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:45px;
+
+    color:rgba(255,255,255,.6);
+
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="/">← Back</a>
+
+<h1>Join the Team</h1>
+
+<p class="description">
+We're looking for video editors, marketing managers, and other creatives to join the New7 Music team.
+Sound like you? Fill this out and we'll get back to you.
+</p>
+
+<form>
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Position of Interest</label>
+<input type="text" name="position" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>School (optional)</label>
+<input type="text" name="school">
+
+<button type="submit">
+Join the Team
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
